@@ -22,7 +22,7 @@ Add the plugin to your `gatsby-config.js`. There is one required option, `meetup
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-source-apiserver",
+      resolve: "gatsby-source-meetup",
       options: {
         meetupSlug: "your-meetup"
       }
@@ -30,6 +30,30 @@ module.exports = {
   ]
 };
 ```
+
+You can then query `allMeetupEvents` to fetch event data:
+
+```graphql
+query {
+  allMeetupEvents {
+    edges {
+      node {
+        name
+        time
+        duration
+        venue {
+          name
+          address1
+          city
+          state
+        }
+      }
+    }
+  }
+}
+```
+
+You can reference [Meetup's API documentation](https://www.meetup.com/meetup_api/docs/2/events) for a full list of fields that can be queried; note that you will need to use camelCased field names in the query (even though they are snake_cased in Meetup's documentation).
 
 ## Contributing
 
