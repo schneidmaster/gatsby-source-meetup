@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-source-meetup",
+  "version": "0.1.0",
+  "description": "Gatsby plugin to load events from Meetup.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schneidmaster/gatsby-source-meetup.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "meetup"
+  ],
+  "author": "Zach Schneider <zach@schneider.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schneidmaster/gatsby-source-meetup/issues"
+  },
+  "homepage": "https://github.com/schneidmaster/gatsby-source-meetup#readme",
+  "dependencies": {
+    "humps": "^2.0.1",
+    "node-fetch": "^2.5.0"
+  }
+}
