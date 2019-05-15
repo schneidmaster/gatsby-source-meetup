@@ -1,3 +1,7 @@
+# Note
+
+When I wrote this package, I somehow didn't notice that [gatsby-source-meetup](https://www.npmjs.com/package/gatsby-source-meetup) already exists. It fills the same purpose and has more advanced configuration options so I recommend you use that. Just leaving the source code on GitHub for posterity since I already wrote it.
+
 # gatsby-source-meetup
 
 Fetches events from the Meetup.com API. Useful when you are building a website for a Meetup group and wish to display information about upcoming events.
